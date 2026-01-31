@@ -124,5 +124,32 @@
     </footer>
 
     <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+        // Compact navigation bar on scroll
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+        const logo = document.querySelector('.logo');
+        const scrollThreshold = 100;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Check if scrolled past threshold
+            if (scrollTop > scrollThreshold) {
+                // Scrolling down - add scrolled class
+                if (scrollTop > lastScrollTop) {
+                    header.classList.add('scrolled');
+                } else {
+                    // Scrolling up but still past threshold
+                    header.classList.add('scrolled');
+                }
+            } else {
+                // At top of page - remove scrolled class
+                header.classList.remove('scrolled');
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
 </body>
 </html>
