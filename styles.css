@@ -142,7 +142,7 @@ header.scrolled .nav-links {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem 5% 4rem;
+    padding: 2rem 5% 3rem;
     background: var(--primary-black);
     position: relative;
 }
@@ -247,7 +247,7 @@ h2 {
 
 .work-section {
     background: var(--secondary-black);
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .video-grid {
@@ -292,9 +292,53 @@ h2 {
     overflow: hidden;
 }
 
+/* HTML5 Video Styles */
+.portfolio-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Hidden by default, shown when video loads */
+    border-radius: 20px 20px 0 0;
+}
+
+.portfolio-video::-webkit-media-controls {
+    filter: brightness(0.8) contrast(1.2);
+}
+
+.portfolio-video::-webkit-media-controls-panel {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+/* Instagram Fallback */
+.instagram-fallback {
+    display: block; /* Shown by default */
+    width: 100%;
+}
+
 .instagram-media {
     max-width: 100% !important;
     min-width: 100% !important;
+}
+
+/* View on Instagram Link */
+.view-instagram {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin: 0 1.5rem 1.5rem;
+    color: var(--text-white);
+    text-decoration: none;
+    background: rgba(0, 102, 255, 0.1);
+    border: 1px solid var(--primary-blue);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.view-instagram:hover {
+    background: var(--primary-blue);
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.4);
 }
 
 .video-item h3 {
@@ -311,7 +355,7 @@ h2 {
 }
 
 .video-item p {
-    padding: 0 1.5rem 1.5rem;
+    padding: 0 1.5rem 0.75rem;
     color: var(--text-gray);
     font-size: 0.95rem;
 }
@@ -545,11 +589,11 @@ a, button, .client, .video-item, .award {
     }
     
     .hero {
-        padding: 2rem 5% 3rem;
+        padding: 2rem 5% 2.5rem;
     }
     
     .work-section {
-        padding-top: 3rem;
+        padding-top: 2.5rem;
     }
 }
 
@@ -575,6 +619,11 @@ a, button, .client, .video-item, .award {
     
     .contact-method {
         font-size: 1rem;
+    }
+    
+    .view-instagram {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
     }
 }
 
