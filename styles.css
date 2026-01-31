@@ -1,4 +1,4 @@
-/* ALX.EDITS PORTFOLIO - PROGRESSIVE REVEAL BUSINESS CARD DESIGN */
+/* ALX.EDITS PORTFOLIO - SIMPLIFIED PROFESSIONAL BUSINESS CARD */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 * {
@@ -175,7 +175,7 @@ header.scrolled nav {
 }
 
 /* ========================================
-   BUSINESS CARD SECTION - PRIMARY VIEW
+   BUSINESS CARD SECTION - SIMPLIFIED & PROFESSIONAL
 ======================================== */
 .business-card-section {
     min-height: 100vh;
@@ -188,7 +188,7 @@ header.scrolled nav {
 }
 
 .business-card {
-    max-width: 600px;
+    max-width: 550px;
     width: 100%;
     text-align: center;
     animation: fadeInScale 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -207,7 +207,7 @@ header.scrolled nav {
 
 /* Brand Identity */
 .brand-identity {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     animation: fadeIn 1s ease-out;
 }
 
@@ -230,14 +230,14 @@ header.scrolled nav {
     letter-spacing: 0.5px;
 }
 
-/* Contact Card */
+/* Contact Card - Streamlined */
 .contact-card {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
-    border-radius: 30px;
-    padding: 3rem 2.5rem;
+    border-radius: 25px;
+    padding: 2.5rem 2rem;
     box-shadow: 0 16px 60px rgba(59, 130, 246, 0.2);
     animation: fadeInUp 1s ease-out 0.3s both;
 }
@@ -253,41 +253,36 @@ header.scrolled nav {
     }
 }
 
-.contact-name {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
-    font-weight: 800;
-    color: var(--primary-blue);
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.5px;
-}
+/* REMOVED: .contact-name for cleaner aesthetic */
 
 .contact-title {
-    font-size: clamp(0.95rem, 2vw, 1.125rem);
+    font-size: clamp(1rem, 2vw, 1.15rem);
     color: var(--text-gray-light);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.6;
+    font-weight: 500;
 }
 
-/* Contact Methods */
+/* Contact Methods - CONDENSED INLINE LAYOUT */
 .contact-methods {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    margin-bottom: 2.5rem;
+    gap: 0.875rem;
+    margin-bottom: 2rem;
 }
 
 .contact-button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
-    padding: 1.25rem 2rem;
-    background: rgba(59, 130, 246, 0.1);
-    border: 2px solid var(--primary-blue);
-    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    background: rgba(59, 130, 246, 0.08);
+    border: 1.5px solid var(--primary-blue);
+    border-radius: 12px;
     text-decoration: none;
     color: var(--text-white);
-    font-size: 1.125rem;
+    font-size: 1.05rem;
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -311,61 +306,41 @@ header.scrolled nav {
 
 .contact-button:hover {
     background: var(--primary-blue);
-    transform: translateX(5px) scale(1.02);
-    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+    transform: translateX(3px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    border-color: var(--accent-blue);
 }
 
 .contact-button:active {
-    transform: translateX(5px) scale(0.98);
+    transform: translateX(3px) scale(0.98);
 }
 
+/* SIMPLIFIED: Consistent icon styling - only blue */
 .contact-icon {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: var(--primary-blue);
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    min-width: 24px;
+    justify-content: center;
 }
 
 .contact-button:hover .contact-icon {
     color: var(--text-white);
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.15);
 }
 
 .contact-text {
     flex: 1;
     text-align: left;
+    letter-spacing: 0.3px;
 }
 
-/* Phone Button Specific */
-.contact-button.phone {
-    border-color: #10B981;
-}
+/* REMOVED: Individual phone and instagram color overrides */
+/* All buttons now use consistent blue branding */
 
-.contact-button.phone .contact-icon {
-    color: #10B981;
-}
-
-.contact-button.phone:hover {
-    background: #10B981;
-    border-color: #10B981;
-}
-
-/* Instagram Button Specific */
-.contact-button.instagram {
-    border-color: #E4405F;
-}
-
-.contact-button.instagram .contact-icon {
-    color: #E4405F;
-}
-
-.contact-button.instagram:hover {
-    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
-    border-color: #E4405F;
-}
-
-/* Quick Stats */
+/* Quick Stats - Streamlined */
 .quick-stats {
     display: flex;
     justify-content: center;
@@ -377,23 +352,23 @@ header.scrolled nav {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background: rgba(255, 215, 0, 0.1);
-    border: 1px solid rgba(255, 215, 0, 0.3);
-    border-radius: 20px;
-    font-size: 0.95rem;
+    padding: 0.65rem 1.25rem;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-gray-light);
 }
 
 .stat-badge i {
-    color: #FFD700;
-    font-size: 1.25rem;
+    color: var(--primary-blue);
+    font-size: 1.15rem;
 }
 
 /* Scroll Indicator */
 .scroll-indicator {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -408,7 +383,7 @@ header.scrolled nav {
 }
 
 .scroll-indicator p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
 }
 
@@ -884,8 +859,8 @@ footer:hover p {
     .nav-links a { font-size: 0.9rem; padding: 0.5rem 0.75rem; }
     
     .business-card-section { padding: 1.5rem 5%; }
-    .contact-card { padding: 2.5rem 2rem; }
-    .contact-button { font-size: 1rem; padding: 1rem 1.5rem; }
+    .contact-card { padding: 2rem 1.75rem; }
+    .contact-button { font-size: 1rem; padding: 0.9rem 1.25rem; }
     .contact-text { font-size: 0.95rem; }
     
     .hero { padding: 6rem 5% 2rem; min-height: auto; }
@@ -900,10 +875,10 @@ footer:hover p {
     .logo { font-size: 1.15rem; }
     .nav-links { flex-wrap: wrap; }
     .brand-name { font-size: 2.5rem; }
-    .contact-card { padding: 2rem 1.5rem; }
-    .contact-methods { gap: 1rem; }
-    .contact-button { flex-direction: column; text-align: center; padding: 1rem; }
-    .contact-text { text-align: center; }
+    .contact-card { padding: 1.75rem 1.5rem; }
+    .contact-methods { gap: 0.75rem; }
+    .contact-button { padding: 0.85rem 1rem; font-size: 0.95rem; }
+    .contact-icon { font-size: 1.2rem; }
     .instagram-embed-wrapper { min-height: 400px; }
     .clients-grid { grid-template-columns: 1fr; }
 }
