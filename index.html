@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://www.instagram.com">
 </head>
 <body>
-    <!-- Fixed Navigation Header -->
-    <header id="main-header">
+    <!-- Fixed Navigation Header - Hidden initially, fades in after 3 seconds -->
+    <header id="main-header" class="nav-hidden">
         <nav>
             <div class="logo">ALX.Edits</div>
             <div class="nav-links">
@@ -29,291 +29,331 @@
         </nav>
     </header>
 
-    <!-- Contact Section - NOW AT TOP FOR DIGITAL BUSINESS CARD -->
-    <section id="contact" class="contact-section" style="padding-top: 100px; min-height: 100vh; display: flex; align-items: center;">
-        <div class="container">
-            <h2>Let's Create Something Amazing</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>Alex Garcia Gil</h3>
-                    <p>Award-Winning Automotive Videographer | 10M+ Views Generated</p>
-                </div>
-                <div class="contact-details">
-                    <div class="contact-method">
-                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                        <a href="mailto:alx.medianz@gmail.com">alx.medianz@gmail.com</a>
-                    </div>
-                    <div class="contact-method">
-                        <span class="icon"><i class="fas fa-mobile-alt"></i></span>
-                        <a href="tel:0204545459">020 454 5459</a>
-                    </div>
-                    <div class="contact-method">
-                        <span class="icon"><i class="fab fa-instagram"></i></span>
-                        <a href="https://www.instagram.com/alx.edits" target="_blank" rel="noopener">@alx.edits</a>
-                    </div>
-                </div>
-                <p class="inquiry-note">Available for dealership campaigns, private shoots, event coverage, and marketing management</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hero Section with Enhanced Credibility -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>ALX.Edits</h1>
-            <p class="tagline">Award-winning automotive videographer specializing in high-energy visuals and engaging content that drives results</p>
-            
-            <!-- Credibility Stats -->
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <i class="fas fa-eye"></i>
-                    <strong>10M+</strong>
-                    <span>Views Generated</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <i class="fas fa-newspaper"></i>
-                    <strong>Featured</strong>
-                    <span>NZ Performance Car (Feb 2024)</span>
-                </div>
+    <!-- Business Card Section - Immediately Visible -->
+    <section id="contact" class="business-card-section">
+        <div class="business-card">
+            <!-- Brand Identity -->
+            <div class="brand-identity">
+                <h1 class="brand-name">ALX.Edits</h1>
+                <p class="brand-tagline">Award-Winning Automotive Videography</p>
             </div>
 
-            <!-- Award Badge -->
-            <div class="award">
-                <span class="award-icon"><i class="fas fa-trophy"></i></span>
-                <span>Winner of 2024 Mad Mike Summer Bash Best Moving Picture Award</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Work Section -->
-    <section id="work" class="work-section">
-        <div class="container">
-            <h2>Featured Work</h2>
-            <p class="section-subtitle">High-impact automotive content that resonates with enthusiasts and drives engagement</p>
-            
-            <div class="video-grid">
-                <!-- Video 1: Giltrap Porsche -->
-                <div class="video-item">
-                    <div class="instagram-embed-wrapper">
-                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DIPWWsYzTCL/" data-instgrm-version="14">
-                            <a href="https://www.instagram.com/reel/DIPWWsYzTCL/" target="_blank" rel="noopener">View on Instagram</a>
-                        </blockquote>
-                    </div>
-                    <div class="video-info">
-                        <h3>Giltrap Porsche Twilight Track Day</h3>
-                        <p>Same-day turnaround • High-energy event coverage</p>
-                        <a href="https://www.instagram.com/reel/DIPWWsYzTCL/" target="_blank" rel="noopener" class="view-instagram">
-                            <i class="fab fa-instagram"></i> View on Instagram
-                        </a>
-                    </div>
-                </div>
+            <!-- Contact Information - Primary Focus -->
+            <div class="contact-card">
+                <h2 class="contact-name">Alex Garcia Gil</h2>
+                <p class="contact-title">10M+ Views Generated | Featured in NZ Performance Car</p>
                 
-                <!-- Video 2: Mad Soundz Racing -->
-                <div class="video-item">
-                    <div class="instagram-embed-wrapper">
-                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTRqIr_AoI4/" data-instgrm-version="14">
-                            <a href="https://www.instagram.com/reel/DTRqIrAoI4/" target="blank" rel="noopener">View on Instagram</a>
-                        </blockquote>
-                    </div>
-                    <div class="video-info">
-                        <h3>Mad Soundz Racing Lawnmower Campaign</h3>
-                        <p>High-energy motorsport content • Viral engagement</p>
-                        <a href="https://www.instagram.com/reel/DTRqIrAoI4/" target="blank" rel="noopener" class="view-instagram">
-                            <i class="fab fa-instagram"></i> View on Instagram
-                        </a>
+                <div class="contact-methods">
+                    <a href="tel:0204545459" class="contact-button phone">
+                        <span class="contact-icon"><i class="fas fa-mobile-alt"></i></span>
+                        <span class="contact-text">020 454 5459</span>
+                    </a>
+                    
+                    <a href="mailto:alx.medianz@gmail.com" class="contact-button email">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="contact-text">alx.medianz@gmail.com</span>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/alx.edits" target="_blank" rel="noopener" class="contact-button instagram">
+                        <span class="contact-icon"><i class="fab fa-instagram"></i></span>
+                        <span class="contact-text">@alx.edits</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="quick-stats">
+                    <div class="stat-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>2024 Best Picture Award</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+                <p>Scroll to view portfolio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Content - Hidden until scroll -->
+    <div id="portfolio-content" class="portfolio-content">
+        <!-- Hero Section with Enhanced Credibility -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>ALX.Edits</h1>
+                <p class="tagline">Award-winning automotive videographer specializing in high-energy visuals and engaging content that drives results</p>
                 
-                <!-- Video 3: Dspec Racing -->
-                <div class="video-item">
-                    <div class="instagram-embed-wrapper">
-                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DLstV4GT6Vp/" data-instgrm-version="14">
-                            <a href="https://www.instagram.com/reel/DLstV4GT6Vp/" target="_blank" rel="noopener">View on Instagram</a>
-                        </blockquote>
+                <!-- Credibility Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <strong>10M+</strong>
+                        <span>Views Generated</span>
                     </div>
-                    <div class="video-info">
-                        <h3>Dspec Racing's Custom Euro Fighters</h3>
-                        <p>Dynamic speed ramp techniques • Cinematic showcase</p>
-                        <a href="https://www.instagram.com/reel/DLstV4GT6Vp/" target="_blank" rel="noopener" class="view-instagram">
-                            <i class="fab fa-instagram"></i> View on Instagram
-                        </a>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <i class="fas fa-newspaper"></i>
+                        <strong>Featured</strong>
+                        <span>NZ Performance Car (Feb 2024)</span>
                     </div>
                 </div>
+
+                <!-- Award Badge -->
+                <div class="award">
+                    <span class="award-icon"><i class="fas fa-trophy"></i></span>
+                    <span>Winner of 2024 Mad Mike Summer Bash Best Moving Picture Award</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work Section -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <h2>Featured Work</h2>
+                <p class="section-subtitle">High-impact automotive content that resonates with enthusiasts and drives engagement</p>
                 
-                <!-- Video 4: RX7 Cinematic -->
-                <div class="video-item">
-                    <div class="instagram-embed-wrapper">
-                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DI7QiJNz86c/" data-instgrm-version="14">
-                            <a href="https://www.instagram.com/reel/DI7QiJNz86c/" target="_blank" rel="noopener">View on Instagram</a>
-                        </blockquote>
+                <div class="video-grid">
+                    <!-- Video 1: Giltrap Porsche -->
+                    <div class="video-item">
+                        <div class="instagram-embed-wrapper">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DIPWWsYzTCL/" data-instgrm-version="14">
+                                <a href="https://www.instagram.com/reel/DIPWWsYzTCL/" target="_blank" rel="noopener">View on Instagram</a>
+                            </blockquote>
+                        </div>
+                        <div class="video-info">
+                            <h3>Giltrap Porsche Twilight Track Day</h3>
+                            <p>Same-day turnaround • High-energy event coverage</p>
+                            <a href="https://www.instagram.com/reel/DIPWWsYzTCL/" target="_blank" rel="noopener" class="view-instagram">
+                                <i class="fab fa-instagram"></i> View on Instagram
+                            </a>
+                        </div>
                     </div>
-                    <div class="video-info">
-                        <h3>RX7 Cinematic</h3>
-                        <p>100K+ views • JDM aesthetic mastery</p>
-                        <a href="https://www.instagram.com/reel/DI7QiJNz86c/" target="_blank" rel="noopener" class="view-instagram">
-                            <i class="fab fa-instagram"></i> View on Instagram
-                        </a>
+                    
+                    <!-- Video 2: Mad Soundz Racing -->
+                    <div class="video-item">
+                        <div class="instagram-embed-wrapper">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTRqIr_AoI4/" data-instgrm-version="14">
+                                <a href="https://www.instagram.com/reel/DTRqIrAoI4/" target="blank" rel="noopener">View on Instagram</a>
+                            </blockquote>
+                        </div>
+                        <div class="video-info">
+                            <h3>Mad Soundz Racing Lawnmower Campaign</h3>
+                            <p>High-energy motorsport content • Viral engagement</p>
+                            <a href="https://www.instagram.com/reel/DTRqIrAoI4/" target="blank" rel="noopener" class="view-instagram">
+                                <i class="fab fa-instagram"></i> View on Instagram
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Expertise Section -->
-    <section id="expertise" class="expertise-section">
-        <div class="container">
-            <h2>Technical Expertise</h2>
-            <p class="section-subtitle">Specialized skills that set ALX.Edits apart in the automotive content space</p>
-            
-            <div class="expertise-grid">
-                <div class="expertise-item">
-                    <div class="expertise-icon">
-                        <i class="fas fa-bolt"></i>
+                    
+                    <!-- Video 3: Dspec Racing -->
+                    <div class="video-item">
+                        <div class="instagram-embed-wrapper">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DLstV4GT6Vp/" data-instgrm-version="14">
+                                <a href="https://www.instagram.com/reel/DLstV4GT6Vp/" target="_blank" rel="noopener">View on Instagram</a>
+                            </blockquote>
+                        </div>
+                        <div class="video-info">
+                            <h3>Dspec Racing's Custom Euro Fighters</h3>
+                            <p>Dynamic speed ramp techniques • Cinematic showcase</p>
+                            <a href="https://www.instagram.com/reel/DLstV4GT6Vp/" target="_blank" rel="noopener" class="view-instagram">
+                                <i class="fab fa-instagram"></i> View on Instagram
+                            </a>
+                        </div>
                     </div>
-                    <h3>Speed Ramping</h3>
-                    <p>Dynamic timing control and velocity manipulation for maximum visual impact and emotional resonance</p>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Dynamic Camera Movements</h3>
-                    <p>Fluid tracking shots, gimbal work, and creative angles that bring automotive content to life</p>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Advanced Color Grading</h3>
-                    <p>JDM and street culture aesthetic with cinema-quality color science and mood creation</p>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-icon">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                    <h3>Detail-Focused Content</h3>
-                    <p>Capturing the intricate details that automotive enthusiasts appreciate and engage with</p>
-                </div>
-
-                <div class="expertise-item">
-                    <div class="expertise-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Industry Recognition</h3>
-                    <p>Established standing in the NZ automotive scene with proven track record and magazine features</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clients Section with Logo Structure -->
-    <section id="clients" class="clients-section">
-        <div class="container">
-            <h2>Trusted by Industry Leaders</h2>
-            <p class="section-subtitle">Partnering with New Zealand's leading automotive brands, events, and dealerships</p>
-            
-            <div class="clients-grid">
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/downtime-events.png" alt="Downtime Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Downtime Events</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/premier-events.png" alt="Premier Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Premier Events</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/choice-events.png" alt="Choice Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Choice Events</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/dspec-racing.png" alt="Dspec Racing" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Dspec Racing</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/drift-academy.png" alt="Drift Academy" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Drift Academy</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/mats-detailing.png" alt="Mats Detailing" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Mats Detailing</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/downforce-events.png" alt="Downforce Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Downforce Events</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/concourse-custom.png" alt="Concourse and Custom" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Concourse and Custom</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/motorone-cx.png" alt="MotorOne CX" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">MotorOne CX</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/example-content.png" alt="Example Content" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Example Content</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/azak-cars.png" alt="AZAK Cars" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">AZAK Cars</span>
-                    </div>
-                </div>
-                <div class="client">
-                    <div class="client-logo-wrapper">
-                        <img src="images/clients/hamilton-classics.png" alt="Hamilton Classics Museum" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                        <span class="client-name-fallback">Hamilton Classics Museum</span>
+                    
+                    <!-- Video 4: RX7 Cinematic -->
+                    <div class="video-item">
+                        <div class="instagram-embed-wrapper">
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DI7QiJNz86c/" data-instgrm-version="14">
+                                <a href="https://www.instagram.com/reel/DI7QiJNz86c/" target="_blank" rel="noopener">View on Instagram</a>
+                            </blockquote>
+                        </div>
+                        <div class="video-info">
+                            <h3>RX7 Cinematic</h3>
+                            <p>100K+ views • JDM aesthetic mastery</p>
+                            <a href="https://www.instagram.com/reel/DI7QiJNz86c/" target="_blank" rel="noopener" class="view-instagram">
+                                <i class="fab fa-instagram"></i> View on Instagram
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 ALX.Edits - Alex Garcia Gil. All rights reserved.</p>
-            <p class="footer-tagline">Driving automotive content excellence in New Zealand</p>
-        </div>
-    </footer>
+        <!-- Technical Expertise Section -->
+        <section id="expertise" class="expertise-section">
+            <div class="container">
+                <h2>Technical Expertise</h2>
+                <p class="section-subtitle">Specialized skills that set ALX.Edits apart in the automotive content space</p>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Speed Ramping</h3>
+                        <p>Dynamic timing control and velocity manipulation for maximum visual impact and emotional resonance</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Dynamic Camera Movements</h3>
+                        <p>Fluid tracking shots, gimbal work, and creative angles that bring automotive content to life</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Advanced Color Grading</h3>
+                        <p>JDM and street culture aesthetic with cinema-quality color science and mood creation</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                        <h3>Detail-Focused Content</h3>
+                        <p>Capturing the intricate details that automotive enthusiasts appreciate and engage with</p>
+                    </div>
+
+                    <div class="expertise-item">
+                        <div class="expertise-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Industry Recognition</h3>
+                        <p>Established standing in the NZ automotive scene with proven track record and magazine features</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section with Logo Structure -->
+        <section id="clients" class="clients-section">
+            <div class="container">
+                <h2>Trusted by Industry Leaders</h2>
+                <p class="section-subtitle">Partnering with New Zealand's leading automotive brands, events, and dealerships</p>
+                
+                <div class="clients-grid">
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/downtime-events.png" alt="Downtime Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Downtime Events</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/premier-events.png" alt="Premier Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Premier Events</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/choice-events.png" alt="Choice Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Choice Events</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/dspec-racing.png" alt="Dspec Racing" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Dspec Racing</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/drift-academy.png" alt="Drift Academy" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Drift Academy</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/mats-detailing.png" alt="Mats Detailing" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Mats Detailing</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/downforce-events.png" alt="Downforce Events" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Downforce Events</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/concourse-custom.png" alt="Concourse and Custom" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Concourse and Custom</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/motorone-cx.png" alt="MotorOne CX" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">MotorOne CX</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/example-content.png" alt="Example Content" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Example Content</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/azak-cars.png" alt="AZAK Cars" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">AZAK Cars</span>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-logo-wrapper">
+                            <img src="images/clients/hamilton-classics.png" alt="Hamilton Classics Museum" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <span class="client-name-fallback">Hamilton Classics Museum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 ALX.Edits - Alex Garcia Gil. All rights reserved.</p>
+                <p class="footer-tagline">Driving automotive content excellence in New Zealand</p>
+            </div>
+        </footer>
+    </div>
 
     <!-- Instagram Embed Script -->
     <script async src="https://www.instagram.com/embed.js"></script>
 
-    <!-- Custom JavaScript for Navigation and Enhancements -->
+    <!-- Custom JavaScript for Progressive Reveal and Navigation -->
     <script>
-        // Navigation Scroll Enhancement
+        // Progressive Reveal System
         const header = document.getElementById('main-header');
-        const scrollThreshold = 80;
+        const portfolioContent = document.getElementById('portfolio-content');
+        const businessCard = document.querySelector('.business-card-section');
+        let hasScrolled = false;
 
+        // Fade in navigation after 3 seconds
+        setTimeout(() => {
+            header.classList.remove('nav-hidden');
+            header.classList.add('nav-visible');
+        }, 3000);
+
+        // Show portfolio content on scroll
         function handleScroll() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            const businessCardHeight = businessCard.offsetHeight;
             
-            if (scrollTop > scrollThreshold) {
+            // Reveal portfolio when user scrolls past 30% of business card
+            if (scrollPosition > businessCardHeight * 0.3 && !hasScrolled) {
+                hasScrolled = true;
+                portfolioContent.classList.add('revealed');
+            }
+
+            // Navigation background on scroll
+            if (scrollPosition > 80) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
@@ -341,6 +381,12 @@
                     
                     const target = document.querySelector(targetId);
                     if (target) {
+                        // Reveal portfolio content if clicking nav links
+                        if (targetId !== '#contact' && !hasScrolled) {
+                            hasScrolled = true;
+                            portfolioContent.classList.add('revealed');
+                        }
+
                         const headerHeight = header.offsetHeight;
                         const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
                         
@@ -377,6 +423,17 @@
                 }
             }, 500);
         });
+
+        // Scroll indicator animation
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        if (scrollIndicator) {
+            setInterval(() => {
+                scrollIndicator.style.animation = 'none';
+                setTimeout(() => {
+                    scrollIndicator.style.animation = '';
+                }, 10);
+            }, 3000);
+        }
     </script>
 </body>
 </html>
