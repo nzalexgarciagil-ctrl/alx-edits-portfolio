@@ -259,7 +259,7 @@ header.scrolled .nav-links {
 }
 
 section {
-    padding: 6rem 0;
+    padding: 3rem 0;
 }
 
 h2 {
@@ -280,7 +280,7 @@ h2 {
 }
 
 .work-section {
-    background: var(--secondary-black);
+    background: var(--primary-black);
     padding-top: 3rem;
 }
 
@@ -462,7 +462,7 @@ h2 {
 }
 
 .contact-section {
-    background: var(--secondary-black);
+    background: var(--primary-black);
     padding: 8rem 0;
 }
 
