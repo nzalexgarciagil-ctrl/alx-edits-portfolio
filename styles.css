@@ -171,7 +171,7 @@ header.scrolled .nav-links {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem 5% 3rem;
+    padding: 2rem 5% 1.5rem;
     background: var(--primary-black);
     position: relative;
 }
@@ -281,7 +281,7 @@ h2 {
 
 .work-section {
     background: var(--primary-black);
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .video-grid {
@@ -360,6 +360,45 @@ h2 {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
+}
+
+/* URGENT FIX: Hide ALL caption text and user info from Instagram embeds - show ONLY media content */
+.instagram-media .Caption,
+.instagram-media [class*="caption"],
+.instagram-media [class*="Caption"],
+.instagram-media a[href*="/p/"] + div,
+.instagram-media a[href*="/reel/"] + div,
+.instagram-media iframe ~ div,
+blockquote.instagram-media > div:last-child,
+blockquote.instagram-media > a + div {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Hide the entire bottom section of Instagram embeds (captions, likes, comments) */
+iframe[src*="instagram.com"] {
+    display: block !important;
+}
+
+/* Additional targeting for embedded caption elements */
+.instagram-media > div:not(:first-child) {
+    display: none !important;
+}
+
+.instagram-media > a:first-child + div {
+    display: none !important;
+}
+
+/* Force hide any text content below the media */
+.instagram-media div[style*="padding"] {
+    padding: 0 !important;
+    display: none !important;
 }
 
 /* Hide Instagram embed UI elements for cleaner presentation */
@@ -648,11 +687,11 @@ a, button, .client, .video-item, .award {
     }
     
     .hero {
-        padding: 2rem 5% 2.5rem;
+        padding: 2rem 5% 1.5rem;
     }
     
     .work-section {
-        padding-top: 2.5rem;
+        padding-top: 1rem;
     }
 }
 
