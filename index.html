@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://www.instagram.com">
 </head>
 <body>
-    <!-- Fixed Navigation Header - Hidden initially, fades in after 3 seconds -->
-    <header id="main-header" class="nav-hidden">
+    <!-- NAVIGATION HIDDEN FOR CLEAN BUSINESS CARD VIEW -->
+    <!-- <header id="main-header" class="nav-hidden">
         <nav>
             <div class="logo">ALX.Edits</div>
             <div class="nav-links">
@@ -27,7 +27,7 @@
                 <a href="#clients">Clients</a>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <!-- Business Card Section - Immediately Visible -->
     <section id="contact" class="business-card-section">
@@ -327,19 +327,12 @@
     <!-- Instagram Embed Script -->
     <script async src="https://www.instagram.com/embed.js"></script>
 
-    <!-- Custom JavaScript for Progressive Reveal and Navigation -->
+    <!-- Custom JavaScript for Progressive Reveal -->
     <script>
-        // Progressive Reveal System
-        const header = document.getElementById('main-header');
+        // Progressive Reveal System - NAV REMOVED FOR CLEAN BUSINESS CARD
         const portfolioContent = document.getElementById('portfolio-content');
         const businessCard = document.querySelector('.business-card-section');
         let hasScrolled = false;
-
-        // Fade in navigation after 3 seconds
-        setTimeout(() => {
-            header.classList.remove('nav-hidden');
-            header.classList.add('nav-visible');
-        }, 3000);
 
         // Show portfolio content on scroll
         function handleScroll() {
@@ -350,13 +343,6 @@
             if (scrollPosition > businessCardHeight * 0.3 && !hasScrolled) {
                 hasScrolled = true;
                 portfolioContent.classList.add('revealed');
-            }
-
-            // Navigation background on scroll
-            if (scrollPosition > 80) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
             }
         }
 
@@ -371,34 +357,8 @@
             }
         });
 
-        // Smooth Scroll with Offset for Fixed Header
+        // Instagram Embed Processing
         document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        // Reveal portfolio content if clicking nav links
-                        if (targetId !== '#contact' && !hasScrolled) {
-                            hasScrolled = true;
-                            portfolioContent.classList.add('revealed');
-                        }
-
-                        const headerHeight = header.offsetHeight;
-                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-                        
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            // Instagram Embed Processing
             setTimeout(function() {
                 if (window.instgrm) {
                     window.instgrm.Embeds.process();
