@@ -1,4 +1,4 @@
-/* ALX.EDITS PORTFOLIO - CLEAN BLACK & BLUE BUSINESS CARD */
+/* ALX.EDITS PORTFOLIO - PROFESSIONAL BLACK & WHITE BUSINESS CARD */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 * {
@@ -8,9 +8,10 @@
 }
 
 :root {
-    --primary-blue: #3B82F6;
-    --accent-blue: #60A5FA;
-    --dark-blue: #2563EB;
+    /* New Black & White Color Scheme */
+    --primary-white: #FFFFFF;
+    --accent-light: #E8E8E8;
+    --accent-medium: #CCCCCC;
     --primary-black: #000000;
     --secondary-black: #0a0a0a;
     --card-black: #0f0f0f;
@@ -19,7 +20,7 @@
     --text-gray-light: #d8d8d8;
     --text-gray-dark: #999999;
     --glass-bg: rgba(15, 15, 15, 0.5);
-    --glass-border: rgba(59, 130, 246, 0.3);
+    --glass-border: rgba(255, 255, 255, 0.2);
     --section-padding: 5rem 0;
     --section-padding-mobile: 3rem 0;
 }
@@ -49,20 +50,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--primary-blue), var(--accent-blue));
+    background: linear-gradient(180deg, var(--primary-white), var(--accent-light));
     border-radius: 6px;
     border: 2px solid var(--primary-black);
     transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--accent-blue), var(--primary-blue));
-    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    background: linear-gradient(180deg, var(--accent-light), var(--primary-white));
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--primary-blue) var(--primary-black);
+    scrollbar-color: var(--primary-white) var(--primary-black);
 }
 
 /* ========================================
@@ -76,7 +77,7 @@ header {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -95,7 +96,7 @@ header.nav-visible {
 
 header.scrolled {
     background: rgba(0, 0, 0, 0.95);
-    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
 
 @keyframes slideDown {
@@ -126,14 +127,14 @@ header.scrolled nav {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-blue);
+    color: var(--primary-white);
     letter-spacing: -0.5px;
     transition: all 0.3s ease;
     white-space: nowrap;
 }
 
 .logo:hover {
-    color: var(--accent-blue);
+    color: var(--accent-light);
     transform: scale(1.05);
 }
 
@@ -162,12 +163,12 @@ header.scrolled nav {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background: var(--primary-blue);
+    background: var(--primary-white);
     transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--primary-blue);
+    color: var(--primary-white);
 }
 
 .nav-links a:hover::after {
@@ -217,7 +218,7 @@ header.scrolled nav {
     color: var(--text-white);
     letter-spacing: -2px;
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--text-white), var(--primary-blue));
+    background: linear-gradient(135deg, var(--text-white), var(--accent-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -238,7 +239,7 @@ header.scrolled nav {
     border: 1px solid var(--glass-border);
     border-radius: 30px;
     padding: 2.5rem 2rem;
-    box-shadow: 0 16px 60px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 16px 60px rgba(255, 255, 255, 0.1);
     animation: fadeInUp 1s ease-out 0.3s both;
 }
 
@@ -256,7 +257,7 @@ header.scrolled nav {
 .contact-name {
     font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 800;
-    color: var(--primary-blue);
+    color: var(--primary-white);
     margin-bottom: 0.5rem;
     letter-spacing: -0.5px;
 }
@@ -282,8 +283,8 @@ header.scrolled nav {
     justify-content: flex-start;
     gap: 1rem;
     padding: 1rem 1.5rem;
-    background: rgba(59, 130, 246, 0.1);
-    border: 2px solid var(--primary-blue);
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--primary-white);
     border-radius: 12px;
     text-decoration: none;
     color: var(--text-white);
@@ -301,7 +302,7 @@ header.scrolled nav {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s ease;
 }
 
@@ -310,9 +311,10 @@ header.scrolled nav {
 }
 
 .contact-button:hover {
-    background: var(--primary-blue);
+    background: var(--primary-white);
+    color: var(--primary-black);
     transform: translateX(5px);
-    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
 }
 
 .contact-button:active {
@@ -321,7 +323,7 @@ header.scrolled nav {
 
 .contact-icon {
     font-size: 1.5rem;
-    color: var(--primary-blue);
+    color: var(--primary-white);
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
@@ -331,7 +333,7 @@ header.scrolled nav {
 }
 
 .contact-button:hover .contact-icon {
-    color: var(--text-white);
+    color: var(--primary-black);
     transform: scale(1.1);
 }
 
@@ -356,8 +358,8 @@ header.scrolled nav {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid var(--primary-blue);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--primary-white);
     border-radius: 20px;
     font-size: 0.95rem;
     font-weight: 600;
@@ -365,7 +367,7 @@ header.scrolled nav {
 }
 
 .stat-badge i {
-    color: var(--primary-blue);
+    color: var(--primary-white);
     font-size: 1.25rem;
 }
 
@@ -382,7 +384,7 @@ header.scrolled nav {
 
 .scroll-indicator i {
     font-size: 2rem;
-    color: var(--primary-blue);
+    color: var(--primary-white);
 }
 
 .scroll-indicator p {
@@ -486,13 +488,13 @@ header.scrolled nav {
 
 .stat-item:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-blue);
-    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    border-color: var(--primary-white);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
 }
 
 .stat-item i {
     font-size: 1.75rem;
-    color: var(--primary-blue);
+    color: var(--primary-white);
 }
 
 .stat-item strong {
@@ -511,7 +513,7 @@ header.scrolled nav {
 .stat-divider {
     width: 2px;
     height: 40px;
-    background: linear-gradient(180deg, transparent, var(--primary-blue), transparent);
+    background: linear-gradient(180deg, transparent, var(--primary-white), transparent);
 }
 
 .award {
@@ -526,14 +528,14 @@ header.scrolled nav {
     border-radius: 50px;
     font-weight: 600;
     font-size: 1rem;
-    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.15);
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .award:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.25);
-    border-color: var(--primary-blue);
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-white);
 }
 
 .award-icon {
@@ -633,9 +635,9 @@ h2 {
 
 .service-item:hover {
     transform: translateY(-10px);
-    border-color: var(--primary-blue);
-    box-shadow: 0 16px 48px rgba(59, 130, 246, 0.3);
-    background: rgba(59, 130, 246, 0.08);
+    border-color: var(--primary-white);
+    box-shadow: 0 16px 48px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .service-icon {
@@ -644,18 +646,18 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    background: linear-gradient(135deg, var(--primary-white), var(--accent-light));
     border-radius: 50%;
     font-size: 1.75rem;
-    color: white;
+    color: var(--primary-black);
     margin-bottom: 1.5rem;
-    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
 
 .service-item:hover .service-icon {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
 }
 
 .service-item h3 {
@@ -689,7 +691,7 @@ h2 {
 
 .service-features li::before {
     content: '✓';
-    color: var(--primary-blue);
+    color: var(--primary-white);
     font-weight: bold;
     font-size: 1.25rem;
 }
@@ -721,8 +723,8 @@ h2 {
 
 .video-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 16px 48px rgba(59, 130, 246, 0.3);
-    border-color: var(--primary-blue);
+    box-shadow: 0 16px 48px rgba(255, 255, 255, 0.2);
+    border-color: var(--primary-white);
 }
 
 .instagram-embed-wrapper {
@@ -767,7 +769,7 @@ h2 {
 }
 
 .video-item:hover .video-info h3 {
-    color: var(--primary-blue);
+    color: var(--accent-light);
 }
 
 .video-info p {
@@ -778,7 +780,7 @@ h2 {
 }
 
 .video-info p strong {
-    color: var(--primary-blue);
+    color: var(--primary-white);
     font-weight: 700;
 }
 
@@ -791,8 +793,8 @@ h2 {
     margin: 0 1.5rem 1.5rem;
     color: var(--text-white);
     text-decoration: none;
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid var(--primary-blue);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--primary-white);
     border-radius: 10px;
     font-size: 0.95rem;
     font-weight: 600;
@@ -800,9 +802,10 @@ h2 {
 }
 
 .view-instagram:hover {
-    background: var(--primary-blue);
+    background: var(--primary-white);
+    color: var(--primary-black);
     transform: translateX(5px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 .view-instagram i {
@@ -836,21 +839,21 @@ h2 {
 
 .expertise-item:hover {
     transform: translateY(-10px);
-    border-color: var(--primary-blue);
-    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.25);
-    background: rgba(59, 130, 246, 0.08);
+    border-color: var(--primary-white);
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
 }
 
 /* Featured Expertise Item - Speed Ramping */
 .expertise-item.featured {
     grid-column: span 1;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(96, 165, 250, 0.1));
-    border: 2px solid var(--primary-blue);
-    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 2px solid var(--primary-white);
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2);
 }
 
 .expertise-item.featured:hover {
-    box-shadow: 0 16px 48px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 16px 48px rgba(255, 255, 255, 0.3);
     transform: translateY(-15px) scale(1.02);
 }
 
@@ -858,16 +861,16 @@ h2 {
     width: 90px;
     height: 90px;
     font-size: 2.25rem;
-    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
 }
 
 .expertise-item.featured h3 {
     font-size: 1.5rem;
-    color: var(--primary-blue);
+    color: var(--primary-white);
 }
 
 .expertise-item.featured p strong {
-    color: var(--accent-blue);
+    color: var(--accent-light);
     font-weight: 700;
 }
 
@@ -878,17 +881,17 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    background: linear-gradient(135deg, var(--primary-white), var(--accent-light));
     border-radius: 50%;
     font-size: 2rem;
-    color: white;
-    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    color: var(--primary-black);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
 
 .expertise-item:hover .expertise-icon {
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
 }
 
 .expertise-item h3 {
@@ -935,10 +938,10 @@ h2 {
 }
 
 .client:hover {
-    background: rgba(59, 130, 246, 0.15);
-    border-color: var(--primary-blue);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary-white);
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
 }
 
 .client-logo-wrapper {
@@ -961,7 +964,7 @@ h2 {
 }
 
 .client:hover .client-logo-wrapper img {
-    filter: grayscale(0%) brightness(1);
+    filter: grayscale(0%) brightness(1.2);
     transform: scale(1.1);
 }
 
@@ -982,7 +985,7 @@ footer {
     -webkit-backdrop-filter: blur(20px);
     padding: 3rem 0;
     text-align: center;
-    border-top: 1px solid rgba(59, 130, 246, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 footer p {
